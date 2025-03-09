@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 // User found
 
                 // 5. Password Verification 
-                if ($password === $user['password']) {
+                if (password_verify($password, $user['password'])) {
                     // Login successful!
 
                     // Start session and store user info (e.g., username) in session
