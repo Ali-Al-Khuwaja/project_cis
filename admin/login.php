@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $_SESSION['logged_in'] = true; // Flag to indicate user is logged in
 
                     // Redirect to admin dashboard
-                    header("Location: index.php");
+                    header("Location: dashboard.php");
                     exit; // Terminate script execution after redirect
                 } else {
                     // Password incorrect
