@@ -21,6 +21,9 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
         <article>
             <header>
                 <h1>لوحة تحكم المدير</h1>
+                <div>
+                    <a href="logout.php" role="button" >تسجيل الخروج</a>
+                </div>
             </header>
 
             <div>

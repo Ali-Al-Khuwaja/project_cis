@@ -60,6 +60,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <article>
             <header>
                 <h1>إنشاء مقالة جديدة</h1>
+                <div>
+                    <a href="logout.php" role="button" >تسجيل الخروج</a>
+                </div>
             </header>
             <?php if ($post_message): ?>
                 <?php echo $post_message; ?>
