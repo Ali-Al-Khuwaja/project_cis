@@ -61,6 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <header>
                 <h1>إنشاء مقالة جديدة</h1>
                 <div>
+                    <a href="dashboard.php" role="button" >لوحة التحكم</a>
                     <a href="logout.php" role="button" >تسجيل الخروج</a>
                 </div>
             </header>

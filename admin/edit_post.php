@@ -102,6 +102,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['post_id_to_edit']) &&
             <header>
                 <h1>تعديل المقالة</h1>
                 <div>
+                    <a href="dashboard.php" role="button">لوحة التحكم</a>
                     <a href="logout.php" role="button" >تسجيل الخروج</a>
                 </div>
             </header>
