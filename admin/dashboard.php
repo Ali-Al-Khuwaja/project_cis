@@ -19,6 +19,10 @@ try {
 } finally {
     $db_conn = null;
 }
+if (isset($_SESSION['delete_message'])) {
+    echo $_SESSION['delete_message'];
+    unset($_SESSION['delete_message']); // Remove the message from the session after displaying it
+}
 ?>
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
@@ -65,7 +69,7 @@ try {
                                 <td><?php echo htmlspecialchars($post['title'], ENT_QUOTES, 'UTF-8'); ?></td>
                                 <td><?php echo date('Y-m-d H:i', strtotime($post['created_at'])); ?></td>
                                 <td><a href="edit_post.php?id=<?php echo $post['id']; ?>" role="button" class="outline">تعديل</a></td>
-                                <td><a href="#" role="button" class="secondary outline">حذف</a></td> 
+                                <td><a href="delete_post.php?id=<?php echo $post['id']; ?>" role="button" class="secondary outline" onclick="return confirm('هل أنت متأكد أنك تريد حذف هذه المقالة؟');">حذف</a></td>
                             </tr>
                             <?php endforeach; ?>
                         </tbody>
