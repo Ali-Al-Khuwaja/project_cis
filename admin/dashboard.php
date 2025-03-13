@@ -63,7 +63,8 @@ try {
                             <?php foreach ($all_posts_admin as $post): ?>
                             <tr>
                                 <td><?php echo htmlspecialchars($post['title'], ENT_QUOTES, 'UTF-8'); ?></td>
-                                <td><?php echo date('Y-m-d H:i', strtotime($post['created_at'])); ?></td> <td><a href="#" role="button" class="outline">تعديل</a></td> 
+                                <td><?php echo date('Y-m-d H:i', strtotime($post['created_at'])); ?></td>
+                                <td><a href="edit_post.php?id=<?php echo $post['id']; ?>" role="button" class="outline">تعديل</a></td>
                                 <td><a href="#" role="button" class="secondary outline">حذف</a></td> 
                             </tr>
                             <?php endforeach; ?>
