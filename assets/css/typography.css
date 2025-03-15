@@ -1,0 +1,118 @@
+:root {
+    --base-font-size: 16px;
+    --h1-font-size: 32px;
+    --h2-font-size: 28px;
+    --h3-font-size: 24px;
+    --h4-font-size: 20px;
+    --h5-font-size: 18px;
+    --h6-font-size: 16px;
+    --small-font-size: 14px;
+}
+
+body {
+    font-size: var(--base-font-size);
+}
+
+h1 {
+    font-size: var(--h1-font-size);
+}
+
+h2 {
+    font-size: var(--h2-font-size);
+}
+
+h3 {
+    font-size: var(--h3-font-size);
+}
+
+h4 {
+    font-size: var(--h4-font-size);
+}
+
+h5 {
+    font-size: var(--h5-font-size);
+}
+
+h6 {
+    font-size: var(--h6-font-size);
+}
+
+small {
+    font-size: var(--small-font-size);
+}
+
+/* Breakpoints (similar to Pico CSS) */
+@media (min-width: 576px) {
+
+    /* sm */
+    :root {
+        --base-font-size: 17px;
+        --h1-font-size: 34px;
+        --h2-font-size: 29.75px;
+        --h3-font-size: 25.5px;
+        --h4-font-size: 21.25px;
+        --h5-font-size: 19.125px;
+        --h6-font-size: 17px;
+        --small-font-size: 14.875px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    /* md */
+    :root {
+        --base-font-size: 18px;
+        --h1-font-size: 36px;
+        --h2-font-size: 31.5px;
+        --h3-font-size: 27px;
+        --h4-font-size: 22.5px;
+        --h5-font-size: 20.25px;
+        --h6-font-size: 18px;
+        --small-font-size: 15.75px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    /* lg */
+    :root {
+        --base-font-size: 19px;
+        --h1-font-size: 38px;
+        --h2-font-size: 33.25px;
+        --h3-font-size: 28.5px;
+        --h4-font-size: 23.75px;
+        --h5-font-size: 21.375px;
+        --h6-font-size: 19px;
+        --small-font-size: 16.625px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    /* xl */
+    :root {
+        --base-font-size: 20px;
+        --h1-font-size: 40px;
+        --h2-font-size: 35px;
+        --h3-font-size: 30px;
+        --h4-font-size: 25px;
+        --h5-font-size: 22.5px;
+        --h6-font-size: 20px;
+        --small-font-size: 17.5px;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    /* xxl */
+    :root {
+        --base-font-size: 21px;
+        --h1-font-size: 42px;
+        --h2-font-size: 36.75px;
+        --h3-font-size: 31.5px;
+        --h4-font-size: 26.25px;
+        --h5-font-size: 23.625px;
+        --h6-font-size: 21px;
+        --small-font-size: 18.375px;
+    }
+}
