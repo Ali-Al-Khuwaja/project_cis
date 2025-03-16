@@ -3,12 +3,18 @@
     src: url("../fonts/Alexandria-VariableFont_wght.ttf");
 }
 
+:root {
+    --white: #ffffff
+}
+
 html {
     font-family: "Alexandria", "Bitstream Vera Serif", serif;
 }
 
-body {
-    margin: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 nav {
@@ -18,13 +24,69 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* overflow: hidden; */
     padding: 0px;
     align-content: center;
     flex-wrap: nowrap;
     gap: 0px;
-    /* position: absolute; */
-    border-radius: 0px 0px 0px 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    width: fill;
+}
+
+/* Set position to relative so we can position */
+/* the list of menu items with `absolute` in relation */
+/* the `details` tag */
+details {
+    position: relative;
+}
+
+summary::marker {
+    content: '▼';
+    font-size: 1.2rem;
+}
+
+details[open] summary::marker {
+    content: '▲';
+}
+
+/* Add some styles to make the dropdown menu stand out from */
+/* the rest of the page. A high `z-index` ensures it stays */
+/* on top of all the other content. */
+details ul {
+    display: block;
+    list-style: none;
+    padding: 0;
+    /* border: 2px solid black; */
+    width: 250px;
+    z-index: 5;
+    position: absolute;
+    top: 40px;
+    background: #3C3C3C;
+    color: white;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+details a {
+    color: white;
+    text-decoration: none;
+}
+
+summary {
+    user-select: none;
+}
+
+#landing-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* top part of the nav bar */
@@ -37,11 +99,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 24px 32px 16px 32px;
-    /* overflow: hidden; */
     align-content: center;
     flex-wrap: nowrap;
-    /* position: absolute; */
-    border-radius: 0px 0px 0px 0px;
 }
 
 
@@ -53,13 +112,10 @@ nav {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* overflow: hidden; */
     padding: 0px;
     align-content: center;
     flex-wrap: nowrap;
     gap: 16px;
-    /* position: absolute; */
-    border-radius: 0px 0px 0px 0px;
 }
 
 .nav-icons>img {
@@ -79,8 +135,6 @@ nav {
     align-content: center;
     flex-wrap: nowrap;
     gap: 16px;
-    /* position: absolute; */
-    border-radius: 0px 0px 0px 0px;
 }
 
 .cis-logo>div {
@@ -95,8 +149,6 @@ nav {
     align-content: flex-end;
     flex-wrap: nowrap;
     gap: 8px;
-    /* position: absolute; */
-    border-radius: 0px 0px 0px 0px;
 }
 
 .cis-logo>img {
@@ -105,10 +157,11 @@ nav {
 }
 
 .cis-name>p {
-    width: 350px;
+    width: 450px;
     height: 25px;
-    margin: 0;
-    font-size: 16px;
+    margin: 0px;
+    font-size: 1.15rem;
+    font-weight: 500;
 }
 
 /* bottom part of the nav bar */
@@ -120,13 +173,10 @@ nav {
     justify-content: flex-end;
     align-items: center;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.15) 100%);
-    /* overflow: hidden; */
     padding: 0px;
     align-content: center;
     flex-wrap: nowrap;
     gap: 0px;
-    /* position: absolute; */
-    border-radius: 0px 0px 0px 0px;
 }
 
 .nav-bottom-part>div {
@@ -143,10 +193,72 @@ nav {
     align-content: center;
     flex-wrap: nowrap;
     gap: 24px;
-    /* position: absolute; */
-    border-radius: 0px 0px 0px 0px;
 }
 
 .nav-bottom-part>div>p {
     margin: 0px;
+    font-weight: 400;
+    user-select: none;
+}
+
+/* grid links */
+.grid-links {
+    width: 100%;
+    height: 70px;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(50px, 1fr));
+    justify-content: center;
+    grid-auto-rows: minmax(0, 1fr);
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+    padding: 0px;
+    gap: 0px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.grid-button {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7a600;
+    padding: 0px;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    border-color: #ffffff;
+    border-style: solid;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 1px;
+}
+
+.grid-button-blue {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3f4f99;
+    overflow: hidden;
+    padding: 0px;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 0;
+    /* position: absolute; */
+    border-radius: 0px 0px 0px 0px;
+    border-color: #ffffff;
+    border-style: solid;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 1px;
+}
+
+.grid-button-blue>p {
+    color: var(--white);
 }
