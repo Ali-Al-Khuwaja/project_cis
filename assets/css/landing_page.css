@@ -302,50 +302,20 @@ summary {
 
 .news-section {
     align-content: center;
-    align-items: center;
-    background-color: #fff;
     display: flex;
-    flex: none;
-    flex-direction: row;
-    flex-wrap: nowrap;
     gap: 24px;
-    height: min-content;
-    justify-content: center;
-    overflow: hidden;
-    padding: 0 48px 48px;
-    position: relative;
+    padding: 48px;
     width: 100%;
 }
 
 .left-side {
-    align-content: flex-start;
-    align-items: flex-start;
+    align-items: flex-end;
     align-self: stretch;
     display: flex;
     flex: 1 0 0px;
     flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 0px;
-    height: auto;
-    justify-content: center;
-    padding: 0;
-    position: relative;
-    width: 1px;
 }
 
-.right-side {
-    flex: 1;
-    width: 1px;
-    height: 547px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    padding: 0px;
-    align-content: flex-end;
-    flex-wrap: nowrap;
-    gap: 16px;
-}
 
 .news-icons {
     align-content: center;
@@ -364,17 +334,12 @@ summary {
 }
 
 .last-three-container {
-    align-content: center;
     align-items: center;
     display: flex;
     flex: 1 0 0px;
     flex-direction: column;
-    flex-wrap: nowrap;
     gap: 24px;
-    height: 1px;
     justify-content: flex-end;
-    padding: 0;
-    position: relative;
     width: 100%;
 }
 
@@ -384,18 +349,9 @@ summary {
 }
 
 .last-three {
-    align-content: center;
     align-items: center;
     display: flex;
-    flex: none;
-    flex-direction: row;
-    flex-wrap: nowrap;
     gap: 25px;
-    height: 125px;
-    justify-content: center;
-    padding: 0;
-    position: relative;
-    width: 100%;
 }
 
 .last-three>img {
@@ -403,11 +359,27 @@ summary {
     height: 125px;
 }
 
-.right-side:first-child{
-
+.right-side {
+    align-items: flex-start;
+    display: flex;
+    flex: 1 0 0px;
+    flex-direction: column;
+    gap: 16px;
 }
-.right-side:last-child{
-    
+
+.contain-post {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
 }
 
-
+.contain-post>img {
+    border-radius: 5px;
+    flex: none;
+    height: 396px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+}
