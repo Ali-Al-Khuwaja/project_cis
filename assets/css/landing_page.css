@@ -263,7 +263,7 @@ summary {
     color: var(--white);
 }
 
-.stats {
+.stats_section {
     box-sizing: border-box;
     flex: 1;
     width: fill;
@@ -299,3 +299,115 @@ summary {
     width: 60px;
     height: 60px;
 }
+
+.news-section {
+    align-content: center;
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    flex: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 24px;
+    height: min-content;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0 48px 48px;
+    position: relative;
+    width: 100%;
+}
+
+.left-side {
+    align-content: flex-start;
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 1 0 0px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0px;
+    height: auto;
+    justify-content: center;
+    padding: 0;
+    position: relative;
+    width: 1px;
+}
+
+.right-side {
+    flex: 1;
+    width: 1px;
+    height: 547px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0px;
+    align-content: flex-end;
+    flex-wrap: nowrap;
+    gap: 16px;
+}
+
+.news-icons {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 16px;
+    height: 50px;
+    justify-content: center;
+    overflow: visible;
+    padding: 0px;
+    position: relative;
+    width: min-content;
+}
+
+.last-three-container {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex: 1 0 0px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 24px;
+    height: 1px;
+    justify-content: flex-end;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+.news-icons>img {
+    width: 25px;
+    height: 25px;
+}
+
+.last-three {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 25px;
+    height: 125px;
+    justify-content: center;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+.last-three>img {
+    width: 175px;
+    height: 125px;
+}
+
+.right-side:first-child{
+
+}
+.right-side:last-child{
+    
+}
+
+
