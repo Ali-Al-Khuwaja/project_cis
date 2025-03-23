@@ -4,7 +4,9 @@
 }
 
 :root {
-    --white: #ffffff
+    --white: #ffffff;
+    --orange: #f7a600;
+    --blue: #3f4f99;
 }
 
 html {
@@ -69,13 +71,13 @@ details ul {
     position: absolute;
     top: 40px;
     background: #3C3C3C;
-    color: white;
+    color: var(--white);
     padding: 25px;
     border-radius: 5px;
 }
 
 details a {
-    color: white;
+    color: var(--white);
     text-decoration: none;
 }
 
@@ -130,7 +132,6 @@ summary {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* overflow: hidden; */
     padding: 0px;
     align-content: center;
     flex-wrap: nowrap;
@@ -224,12 +225,12 @@ summary {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f7a600;
+    background-color: var(--orange);
     padding: 0px;
     align-content: center;
     flex-wrap: nowrap;
     gap: 10px;
-    border-color: #ffffff;
+    border-color: var(--white);
     border-style: solid;
     border-top-width: 0px;
     border-bottom-width: 0px;
@@ -243,7 +244,7 @@ summary {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #3f4f99;
+    background-color: var(--blue);
     overflow: hidden;
     padding: 0px;
     align-content: center;
@@ -251,7 +252,7 @@ summary {
     gap: 0;
     /* position: absolute; */
     border-radius: 0px 0px 0px 0px;
-    border-color: #ffffff;
+    border-color: var(--white);
     border-style: solid;
     border-top-width: 0px;
     border-bottom-width: 0px;
@@ -273,7 +274,7 @@ summary {
     justify-content: space-evenly;
     align-items: center;
     padding: 24px;
-    background-color: #f7a600;
+    background-color: var(--orange);
     overflow: hidden;
     align-content: center;
     flex-wrap: nowrap;
@@ -382,4 +383,39 @@ summary {
     position: relative;
     width: 100%;
     object-fit: cover;
+}
+
+.announcements-section {
+    align-items: center;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 48px 48px;
+    width: 100%;
+}
+
+.announcements-section :first-child {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.announcements-section :last-child {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+.ad {
+    background-color: var(--orange);
+    border-radius: 5px;
+    flex-direction: column;
+    height: 130px;
+    justify-content: flex-start;
+    padding: 20px;
+    width: 100%;
+    gap: 10px;
+    display: flex;
 }
