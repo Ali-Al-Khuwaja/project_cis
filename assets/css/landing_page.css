@@ -7,10 +7,12 @@
     --white: #ffffff;
     --orange: #f7a600;
     --blue: #3f4f99;
+    --bone: #F4F5F6;
 }
 
 html {
     font-family: "Alexandria", "Bitstream Vera Serif", serif;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -43,6 +45,7 @@ header {
     height: 100vh;
     width: fill;
     overflow: hidden;
+    background-color: var(--white);
 }
 
 /* Set position to relative so we can position */
@@ -87,6 +90,7 @@ details a {
 summary {
     user-select: none;
 }
+
 
 #landing-img {
     width: 100vw;
@@ -346,6 +350,7 @@ summary {
     gap: 24px;
     padding: 48px;
     width: 100%;
+    background-color: var(--white);
 }
 
 .left-side {
@@ -460,13 +465,15 @@ summary {
 }
 
 .majors {
-    background-color: #fff;
+    background-color: var(--white);
     display: flex;
     text-align: center;
     flex-direction: column;
     gap: 48px;
     padding: 0 48px 48px;
     width: 100%;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
 }
 
 .majors :last-child {
@@ -480,6 +487,7 @@ summary {
     display: flex;
     flex-direction: column;
     gap: 8px;
+
 }
 
 .majors-card>img {
@@ -487,32 +495,9 @@ summary {
     height: 100px;
 }
 
-footer {
-    padding: 49px 48px 24px;
-    gap: 24px;
-    display: flex;
-    flex-direction: column;
-}
-
-footer :first-child {
-    display: flex;
-    gap: 24px;
-    justify-content: space-between;
-}
-
-.footer-links {
-    align-items: center;
-    display: flex;
-    gap: 24px;
-}
-
-.footer-links>div {
-    display: flex;
-    /* flex: none; */
-    flex-direction: column;
-    /* flex-wrap: nowrap; */
-    height: 225px;
-    justify-content: space-between;
+.majors-card :last-child {
+    font-weight: 300;
+    font-size: medium;
 }
 
 .logo-card {
@@ -521,4 +506,57 @@ footer :first-child {
     flex: none;
     flex-direction: column;
     gap: 8px;
+    font-weight: 600;
+}
+
+footer {
+    padding: 49px 48px 24px;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+    background-color: var(--bone);
+}
+
+footer :first-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links {
+    display: flex;
+    gap: 24px;
+    width: fit-content;
+    height: 225px;
+}
+
+.footer-links>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-links>div>p {
+    font-size: x-large;
+}
+
+.footer-links>div>div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: flex-start;
+    height: 130px;
+}
+
+.showcase {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    height: min-content;
+    justify-content: center;
+    width: 100%;
+}
+
+.showcase-card :first-child {
+    font-size: large;
 }
