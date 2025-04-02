@@ -34,12 +34,15 @@ nav {
     top: 0;
     left: 0;
     right: 0;
+    color: var(--white);
+    z-index: 3;
 }
 
 header {
     position: relative;
     height: 100vh;
     width: fill;
+    overflow: hidden;
 }
 
 /* Set position to relative so we can position */
@@ -86,9 +89,40 @@ summary {
 }
 
 #landing-img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.banner {
+    position: relative;
+    display: inline-block;
+
+}
+
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.4) 60%);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.floating-text {
+    position: absolute;
+    top: 40%;
+    right: 32px;
+    color: #fff;
+    z-index: 3;
+    text-align: right;
+    padding: 10px;
+    margin: 0;
 }
 
 /* top part of the nav bar */
@@ -121,8 +155,8 @@ summary {
 }
 
 .nav-icons>img {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
 }
 
 .cis-logo {
@@ -202,6 +236,8 @@ summary {
     user-select: none;
 }
 
+
+
 /* grid links */
 .grid-links {
     width: 100%;
@@ -217,6 +253,8 @@ summary {
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 3;
+    color: var(--white);
 }
 
 .grid-button {
@@ -283,7 +321,7 @@ summary {
 }
 
 .number_stats {
-    width: min-content;
+    width: fit-content;
     height: min-content;
     display: flex;
     flex-direction: column;
@@ -294,11 +332,12 @@ summary {
     align-content: center;
     flex-wrap: nowrap;
     gap: 8px;
+    color: var(--white);
 }
 
 .number_stats>img {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
 }
 
 .news-section {
@@ -418,4 +457,68 @@ summary {
     width: 100%;
     gap: 10px;
     display: flex;
+}
+
+.majors {
+    background-color: #fff;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 48px;
+    padding: 0 48px 48px;
+    width: 100%;
+}
+
+.majors :last-child {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.majors-card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.majors-card>img {
+    width: 100px;
+    height: 100px;
+}
+
+footer {
+    padding: 49px 48px 24px;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer :first-child {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.footer-links {
+    align-items: center;
+    display: flex;
+    gap: 24px;
+}
+
+.footer-links>div {
+    display: flex;
+    /* flex: none; */
+    flex-direction: column;
+    /* flex-wrap: nowrap; */
+    height: 225px;
+    justify-content: space-between;
+}
+
+.logo-card {
+    align-items: center;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    gap: 8px;
 }
