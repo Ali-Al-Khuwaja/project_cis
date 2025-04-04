@@ -53,33 +53,40 @@ header {
 /* the `details` tag */
 details {
     position: relative;
+    /* direction: ltr; */
 }
 
 summary::marker {
-    content: '▼';
+    content: '⏷';
     font-size: 1.2rem;
 }
 
 details[open] summary::marker {
-    content: '▲';
+    content: '⏶';
 }
 
 /* Add some styles to make the dropdown menu stand out from */
 /* the rest of the page. A high `z-index` ensures it stays */
 /* on top of all the other content. */
 details ul {
-    display: block;
+    display: flex;
+    flex-direction: column;
     list-style: none;
     padding: 0;
-    /* border: 2px solid black; */
-    width: 250px;
-    z-index: 5;
+    width: fit-content;
+    text-wrap: nowrap;
+    z-index: 99999;
     position: absolute;
     top: 40px;
     background: #3C3C3C;
     color: var(--white);
     padding: 25px;
     border-radius: 5px;
+    font-weight: 300;
+    font-size: large;
+    line-height: 1.5;
+    box-shadow: 0px 0.6021873017743928px 0.6021873017743928px -1.25px rgba(0, 0, 0, 0.72), 0px 2.288533303243457px 2.288533303243457px -2.5px rgba(0, 0, 0, 0.64), 0px 10px 10px -3.75px rgba(0, 0, 0, 0.25);
+    gap: 8px;
 }
 
 details a {
@@ -91,6 +98,9 @@ summary {
     user-select: none;
 }
 
+.dropdown>ul {
+    direction: rtl;
+}
 
 #landing-img {
     width: 100vw;
@@ -118,12 +128,13 @@ summary {
     pointer-events: none;
 }
 
+
 .floating-text {
     position: absolute;
     top: 40%;
     right: 32px;
     color: #fff;
-    z-index: 3;
+    z-index: 2;
     text-align: right;
     padding: 10px;
     margin: 0;
@@ -309,7 +320,7 @@ summary {
 .stats_section {
     box-sizing: border-box;
     flex: 1;
-    width: fill;
+    width: auto;
     height: min-content;
     display: flex;
     flex-direction: row;
@@ -322,10 +333,11 @@ summary {
     flex-wrap: nowrap;
     border-radius: 5px;
     margin: 48px;
+    flex-wrap: wrap;
 }
 
 .number_stats {
-    width: fit-content;
+    width: auto;
     height: min-content;
     display: flex;
     flex-direction: column;
@@ -559,4 +571,60 @@ footer :first-child {
 
 .showcase-card :first-child {
     font-size: large;
+}
+
+.showcase-card>div>div {
+    display: flex;
+    flex: 1 0 0px;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+}
+
+.showcase-card>div>div>img {
+    width: 35%;
+    height: auto;
+}
+
+.showcase-card {
+    width: 350px;
+    height: 450px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexing-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 90% !important;
+    box-sizing: border-box !important;
+}
+
+.flexing-grid>div {
+    display: flex !important;
+    gap: 8px !important;
+    width: 100% !important;
+    height: 35% !important;
+}
+
+.flexing-grid>div>img {
+    width: 50% !important;
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+
+    /* Add your tablet-specific styles here */
+
+}
+
+/* Phone Styles */
+@media only screen and (max-width: 599px) {
+
+    /* Add your phone-specific styles here */
+
 }
