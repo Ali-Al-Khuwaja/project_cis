@@ -48,6 +48,8 @@ if (isset($_SESSION['delete_message'])) {
                 <p>من هنا يمكنك إدارة مدونة أخبار الكلية.</p>
 
                 <p><a href="create_post.php" role="button">إنشاء مقالة جديدة</a></p>
+                <p><a href="manage_adverts.php" role="button">إنشاء إعلان جديد</a></p>
+
 
                 <h3>المقالات المنشورة</h3>
                 <div class="overflow-auto">
