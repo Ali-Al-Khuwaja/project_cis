@@ -91,7 +91,7 @@ html {
 .header-v1 {
     position: relative;
     height: 100vh;
-    width: fill;
+    width: 100%;
     overflow: hidden;
     background-color: var(--white);
 }
@@ -152,10 +152,12 @@ details a {
 summary {
     user-select: none;
     cursor: pointer;
+    width: max-content;
 }
 
 a {
     cursor: pointer;
+    width: fit-content !important;
 }
 
 h3 {
@@ -478,6 +480,7 @@ h3 {
 .last-three>img {
     width: 175px;
     height: 125px;
+    border-radius: 5px;
 }
 
 .right-side {
@@ -516,16 +519,15 @@ h3 {
 }
 
 .announcements-section :first-child {
-    align-items: center;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     width: 100%;
 }
 
 .announcements-section :last-child {
-    align-items: center;
     display: flex;
     gap: 10px;
+    width: 100%;
 }
 
 .ad {
@@ -533,11 +535,12 @@ h3 {
     border-radius: 5px;
     flex-direction: column;
     height: 130px;
-    justify-content: flex-start;
+    justify-content: space-between !important;
     padding: 20px;
     width: 100%;
     gap: 10px;
     display: flex;
+
 }
 
 .majors {
@@ -548,8 +551,6 @@ h3 {
     gap: 48px;
     padding: 0 48px 48px;
     width: 100%;
-    border-bottom-left-radius: 32px;
-    border-bottom-right-radius: 32px;
 }
 
 .majors :last-child {
@@ -597,6 +598,7 @@ footer {
 footer :first-child {
     display: flex;
     justify-content: space-between;
+    overflow: auto;
 }
 
 .footer-links {
@@ -631,31 +633,50 @@ footer :first-child {
     display: flex;
     flex-direction: row;
     gap: 24px;
-    height: min-content;
+    height: fit-content;
     justify-content: center;
     width: 100%;
+    height: 450px;
+    overflow: hidden;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    background-color: var(--white);
 }
 
-.showcase-card :first-child {
-    font-size: large;
-}
 
-.showcase-card>div>div {
+.showcase-card-stories-divs {
     display: flex;
     flex: 1 0 0px;
     flex-direction: row;
     gap: 10px;
     width: 100%;
+    font-size: small;
 }
 
-.showcase-card>div>div>img {
+.showcase-card-stories {
     width: 35%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 .showcase-card {
     width: 350px;
-    height: 450px;
+    height: 450px !important;
+}
+
+.flexing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    height: 89%;
+}
+
+.flexing-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 .flex {
@@ -663,37 +684,231 @@ footer :first-child {
     flex-direction: column;
 }
 
-.flexing-grid {
+.expand {
+    height: 89%;
     display: flex;
-    flex-direction: column;
-    gap: 8px;
-    height: 90% !important;
-    box-sizing: border-box !important;
-}
-
-.flexing-grid>div {
-    display: flex !important;
-    gap: 8px !important;
-    width: 100% !important;
-    height: 35% !important;
-}
-
-.flexing-grid>div>img {
-    width: 50% !important;
-}
-
-/* Tablet Styles */
-@media only screen and (min-width: 600px) and (max-width: 900px) {
-
-    /* Add your tablet-specific styles here */
+    gap: 10px;
 
 }
+
+.title {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
 
 /* Phone Styles */
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 950px) {
 
     /* Add your phone-specific styles here */
+    .nav-bottom-part {
+        display: none;
+        visibility: hidden;
+    }
 
+    .burger-menu-icon {
+        display: block !important;
+        visibility: visible;
+    }
+
+    .grid-links {
+        display: none;
+        visibility: hidden;
+    }
+
+    .nav-icons {
+        display: none;
+        visibility: hidden;
+    }
+
+    .banner {
+        position: relative;
+        display: block;
+        margin: 10px;
+    }
+
+    #landing-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        position: relative;
+        z-index: 1;
+        border-radius: 5px !important;
+    }
+
+    .gradient-overlay {
+        border-radius: 5px;
+    }
+
+    .header-v1 {
+        position: static;
+        width: 100%;
+        background-color: var(--white);
+        overflow: visible;
+        display: block;
+        height: fit-content;
+    }
+
+    .floating-text {
+        font-size: smaller;
+    }
+
+    .nav-v1 {
+        position: relative;
+        height: fit-content;
+    }
+
+    .nav-top-part {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cis-name {
+        color: var(--black);
+        gap: 0px !important;
+    }
+
+    .cis-logo>div {
+        display: flex !important;
+        align-items: flex-start !important;
+        justify-content: center !important;
+    }
+
+    .cis-name>p {
+        font-size: small !important;
+        width: auto;
+        text-wrap: nowrap;
+
+    }
+
+    .cis-logo {
+        gap: 5px;
+    }
+
+    .cis-logo>img {
+        width: 50px;
+        height: 50px;
+    }
+
+    details {
+        position: relative;
+        /* direction: ltr; */
+        z-index: 1;
+        height: max-content !important;
+    }
+
+    summary::marker {
+        content: '⏷';
+        font-size: 1.2rem;
+    }
+
+    details[open] summary::marker {
+        content: '⏶';
+    }
+
+    /* Add some styles to make the dropdown menu stand out from */
+    /* the rest of the page. A high `z-index` ensures it stays */
+    /* on top of all the other content. */
+    details ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        width: fit-content;
+        text-wrap: nowrap;
+        position: static !important;
+        color: var(--white);
+        padding: 10px;
+        font-weight: 300;
+        font-size: medium;
+        line-height: 1.5;
+        gap: 8px;
+        cursor: pointer;
+        background-color: var(--black);
+        box-shadow: none;
+    }
+
+    details a {
+        color: var(--white);
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* ------------------------------------------sections------------------------------------ */
+    .number_stats {
+        width: 50%;
+        text-align: center;
+    }
+
+    .stats_section {
+        margin: 10px;
+    }
+
+    .news-section {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .last-three-container {
+        gap: 10px;
+    }
+
+    .last-three {
+        gap: 10px;
+    }
+
+    .announcements-section {
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .announcements-section :last-child {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .majors {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .majors-card {
+        width: 100%;
+    }
+
+    .majors :last-child {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    footer :first-child {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+
+    .showcase {
+        flex-direction: column !important;
+        height: fit-content;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .showcase-card {
+        width: 100%;
+        height: 100% !important;
+    }
 }
 
 .blue {
@@ -706,8 +921,6 @@ footer :first-child {
 }
 
 /* dynamic content */
-
-
 .dynamic {
     display: flex;
     margin: 16px;
@@ -839,4 +1052,62 @@ table.striped-table tbody tr:nth-child(even) {
 /* Optional: hover effect */
 table.striped-table tbody tr:hover {
     background-color: #ececec;
+}
+
+/* --------------------------burger menu ------------------------- */
+
+.burger-menu-icon {
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.burger-menu-icon span {
+    display: block !important;
+    width: 100% !important;
+    height: 3px !important;
+    background-color: var(--black) !important;
+    margin-bottom: 5px !important;
+    transition: all 0.3s !important;
+    border-radius: 15px !important;
+}
+
+/* Style the menu */
+.burger-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: var(--bg-black);
+    padding: 20px;
+    z-index: 2;
+    width: 100%;
+    border-bottom: var(--black-line) 1px solid;
+}
+
+.burger-menu a {
+    text-decoration: none;
+    color: var(--white-text);
+}
+
+/* Show the menu on click */
+.burger-menu-icon.active span:nth-child(1) {
+    transform: rotate(50deg) translate(6px, 5px);
+}
+
+.burger-menu-icon.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-menu-icon.active span:nth-child(3) {
+    transform: rotate(-50deg) translate(6px, -5px);
+
+}
+
+.burger-menu.show {
+    display: block;
+    background-color: var(--black);
+    height: auto;
 }
