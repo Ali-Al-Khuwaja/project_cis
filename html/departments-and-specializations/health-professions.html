@@ -23,7 +23,78 @@
                 <div class="nav-icons">
                     <img src="/project_cis/assets/images/map-pin-area-fill-dark.svg" alt="">
                 </div>
+                <div class="burger-menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="burger-menu ">
+                <div>
+                    <details class="dropdown">
+                        <summary> حول الكلية</summary>
+                        <ul>
+                            <li><a href="#">عن الكلية</a></li>
+                            <li><a href="#">عميد الكلية</a></li>
+                            <li><a href="#">رئيس مجلس الأمناء</a></li>
+                            <li><a href="#">أعضاء مجلس الأمناء</a></li>
+                            <li><a href="#">مجلس الكلية</a></li>
 
+                        </ul>
+                    </details>
+                    <details class="dropdown">
+                        <summary> الأقسام و التخصصات</summary>
+                        <ul>
+                            <li><a href="#">المهن الصحية</a></li>
+                            <li><a href="#">العلوم الإدارية</a></li>
+                            <li><a href="#">الهندسة وتكنولوجيا المعلومات</a></li>
+                            <li><a href="#">الإعلام</a></li>
+                        </ul>
+                    </details>
+                    <details class="dropdown">
+                        <summary> دوائر الكلية</summary>
+                        <ul>
+                            <li><a href="#">الشؤون الأكاديمية</a></li>
+                            <li><a href="#">الشؤون الإدارية و المالية</a></li>
+                            <li><a href="#">القبول والتسجيل</a></li>
+                            <li><a href="#">شؤون الطلبة</a></li>
+                            <li><a href="#">الشؤون المالية</a></li>
+                            <li><a href="#">تكنولوجيا المعلومات</a></li>
+                        </ul>
+                    </details>
+                    <details class="dropdown">
+                        <summary> الإرشادات</summary>
+                        <ul>
+                            <li><a href="#">النظام الأكاديمي</a></li>
+                            <li><a href="#">المنح والقروض</a></li>
+                            <li><a href="#">مصطلحات وتعريفات</a></li>
+                            <li><a href="#">الضبط الأكاديمي</a></li>
+                        </ul>
+                    </details>
+                    <details class="dropdown">
+                        <summary> الخدمات الإلكترونية</summary>
+                        <ul>
+                            <li><a href="#">الطلبة الجدد</a></li>
+                            <li><a href="#">نظام الوظائف الشاغرة</a></li>
+                            <li><a href="#">نتائج الثانوية العامة</a></li>
+                            <li><a href="#">التعليم الإلكتروني</a></li>
+                            <li><a href="#">نظام متابعة الخريجين</a></li>
+                            <li><a href="#">إحتفالات التخرج</a></li>
+                            <li><a href="#">دليل الهواتف الذكية</a></li>
+                            <li><a href="#">البريد الإلكتروني</a></li>
+                        </ul>
+                    </details>
+                    <details class="dropdown">
+                        <summary> البوابات</summary>
+                        <ul>
+                            <li><a href="#">بوابة المحاضر</a></li>
+                            <li><a href="#">بوابة الطالب</a></li>
+                            <li><a href="#">بوابة الموظف</a></li>
+                            <li><a href="#">التدريب الميداني</a></li>
+                        </ul>
+                    </details>
+                    <p>إتصل بنا</p>
+                </div>
             </div>
             <div class="nav-bottom-part">
                 <div>
@@ -246,6 +317,7 @@
         <th>اسم المحاضر</th>
         <th>البرنامج</th>
         <th>النوع</th>
+    </thead>
       </tr>
         <tbody>
         <tr><td>1</td><td>أسامة علي محمد مهدي</td><td>السكرتاريا والسجل الطبي</td><td>متفرغ</td></tr>
@@ -445,7 +517,21 @@
         }
 
     </script>
+    <script>
+        // Get the burger menu icon and menu elements
+        const burgerMenuIcon = document.querySelector(".burger-menu-icon");
+        const burgerMenu = document.querySelector(".burger-menu");
 
+        // Add an event listener to the burger menu icon
+        burgerMenuIcon.addEventListener("click", () => {
+            // Toggle the active class on the burger menu icon
+            burgerMenuIcon.classList.toggle("active");
+
+            // Toggle the show class on the menu
+            burgerMenu.classList.toggle("show");
+        });
+
+    </script>
 </body>
 
 </html>
