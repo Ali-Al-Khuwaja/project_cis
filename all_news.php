@@ -10,6 +10,7 @@ include 'includes/db_connection.php';
     <title>كل أخبار الكلية</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.pumpkin.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/images/logocis.png" type="image/x-icon">
 </head>
 <body class="container">
     <header>
@@ -49,10 +50,7 @@ include 'includes/db_connection.php';
                             <?php else: ?>
                                 <img src="assets/images/landscape-placeholder-svgrepo-com.svg" alt="لا توجد صورة" style="max-width: 100%; height: auto;">
                             <?php endif; ?>
-                            <p><?php echo substr(htmlspecialchars($post['content'], ENT_QUOTES, 'UTF-8'), 0, 200) . '...'; ?></p>
-                            <footer>
-                                <a href="#" role="button" class="outline">اقرأ المزيد</a>
-                            </footer>
+                            <p><?php echo $post['content']; ?></p>
                         </article>
                     <?php endforeach; ?>
                 </div>

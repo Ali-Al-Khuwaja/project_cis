@@ -19,6 +19,7 @@ try {
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>كل إعلانات الكلية</title>
+    <link rel="icon" href="assets/images/logocis.png" type="image/x-icon">
 </head>
 <body class="container">
     <header>
@@ -39,7 +40,7 @@ try {
                     <article>
                         <h3><?php echo htmlspecialchars($advert['title'], ENT_QUOTES, 'UTF-8'); ?></h3>
                         <p class="advert-date">تاريخ النشر: <?php echo date('Y-m-d', strtotime($advert['created_at'])); ?></p>
-                        <div><?php echo nl2br(htmlspecialchars($advert['content'], ENT_QUOTES, 'UTF-8')); ?></div>
+                        <div><?php echo nl2br($advert['content']); ?></div>
                     </article>
                 <?php endforeach; ?>
             </div>
