@@ -47,37 +47,17 @@ if (isset($_SESSION['delete_message'])) {
                 <p>مرحبا بك في لوحة تحكم المدير!</p>
                 <p>من هنا يمكنك إدارة مدونة أخبار الكلية.</p>
 
-                <p><a href="create_post.php" role="button">إنشاء مقالة جديدة</a></p>
-                <p><a href="manage_adverts.php" role="button">إنشاء إعلان جديد</a></p>
-
-
-                <h3>المقالات المنشورة</h3>
-                <div class="overflow-auto">
-                                    <?php if (empty($all_posts_admin)): ?>
-                    <p>لا توجد مقالات منشورة حتى الآن.</p>
-                <?php else: ?>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>عنوان المقالة</th>
-                                <th>تاريخ الإنشاء</th>
-                                <th>تعديل</th>
-                                <th>حذف</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php foreach ($all_posts_admin as $post): ?>
-                            <tr>
-                                <td><?php echo htmlspecialchars($post['title'], ENT_QUOTES, 'UTF-8'); ?></td>
-                                <td><?php echo date('Y-m-d H:i', strtotime($post['created_at'])); ?></td>
-                                <td><a href="edit_post.php?id=<?php echo $post['id']; ?>" role="button" class="outline">تعديل</a></td>
-                                <td><a href="delete_post.php?id=<?php echo $post['id']; ?>" role="button" class="secondary outline" onclick="return confirm('هل أنت متأكد أنك تريد حذف هذه المقالة؟');">حذف</a></td>
-                            </tr>
-                            <?php endforeach; ?>
-                        </tbody>
-                    </table>
-                <?php endif; ?>
+                <div style="display: flex; gap:20px ">
+                    <div style="display: flex; gap:20px">
+                        <p><a href="manage_posts.php" role="button">إدارة الأخبار</a></p>
+                        <p><a href="create_post.php" role="button">إنشاء خبر جديدة</a></p>
+                    </div>
+                    <div style="display: flex; gap:20px">
+                        <p><a href="manage_adverts.php" role="button">إدارة الإعلانات</a></p>
+                        <p><a href="create_advert.php" role="button">إنشاء إعلان جديد</a></p>
+                    </div>
                 </div>
+
             </div>
 
         </article>

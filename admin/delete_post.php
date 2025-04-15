@@ -20,14 +20,14 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 
         // Check if any rows were affected (meaning the deletion was successful)
         if ($stmt->rowCount() > 0) {
-            $delete_message = '<p style="color:green;">تم حذف المقالة بنجاح!</p>'; // Arabic: "Post deleted successfully!"
+            $delete_message = '<p style="color:green;">تم حذف الخبر بنجاح!</p>'; // Arabic: "Post deleted successfully!"
         } else {
-            $delete_message = '<p style="color:orange;">لم يتم العثور على المقالة أو لا يمكن حذفها.</p>'; // Arabic: "Post not found or could not be deleted."
+            $delete_message = '<p style="color:orange;">لم يتم العثور على الخبر أو لا يمكن حذفها.</p>'; // Arabic: "Post not found or could not be deleted."
         }
 
     } catch (PDOException $e) {
         // Database error
-        $delete_message = '<p style="color:red;">حدث خطأ أثناء حذف المقالة من قاعدة البيانات: ' . htmlspecialchars($e->getMessage()) . '</p>'; // Arabic: "An error occurred while deleting the post from the database: " . error message
+        $delete_message = '<p style="color:red;">حدث خطأ أثناء حذف الخبر من قاعدة البيانات: ' . htmlspecialchars($e->getMessage()) . '</p>'; // Arabic: "An error occurred while deleting the post from the database: " . error message
     } finally {
         // Close database connection
         $db_conn = null;
@@ -35,13 +35,13 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 
     // Redirect back to the dashboard with a message
     $_SESSION['delete_message'] = $delete_message; // Store message in session to display on dashboard
-    header("Location: dashboard.php");
+    header("Location: manage_posts.php");
     exit;
 
 } else {
     // Invalid or missing post ID
-    $_SESSION['delete_message'] = '<p style="color:red;">معرف المقالة غير صالح للحذف.</p>'; // Arabic: "Invalid post ID for deletion."
-    header("Location: dashboard.php");
+    $_SESSION['delete_message'] = '<p style="color:red;">معرف الخبر غير صالح للحذف.</p>'; // Arabic: "Invalid post ID for deletion."
+    header("Location: manage_posts.php");
     exit;
 }
 ?>

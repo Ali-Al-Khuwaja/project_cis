@@ -324,19 +324,21 @@ try {
                 </div>
             </div>
         <div style="background-color: #F4F5F6;">
-                            <div class="showcase">
-            <div class="showcase-card">
+            <div class="showcase">
+                <div class="showcase-card">
                 <h4 class="title blue" >فيسبوك</h4>
-                <div id="fb-root"></div>
-                <script async defer crossorigin="anonymous"
+                    <div id="facebook">
+                    <div id="fb-root"></div>
+                    <script async defer crossorigin="anonymous"
                     src="https://connect.facebook.net/ar_AR/sdk.js#xfbml=1&version=v20.0" nonce="Rw59KAN4"></script>
-                <div class="fb-page " data-href="https://www.facebook.com/AlazharCis" data-tabs="timeline"
+                    <div class="fb-page " data-href="https://www.facebook.com/AlazharCis" data-tabs="timeline"
                     data-width="400" data-height="" data-small-header="true" data-adapt-container-width="true"
                     data-hide-cover="false" data-show-facepile="false">
                     <blockquote cite="https://www.facebook.com/AlazharCis" class="fb-xfbml-parse-ignore"><a
-                            href="https://www.facebook.com/AlazharCis">‏كلية الدراسات المتوسطة - جامعة الأزهر‏</a>
+                    href="https://www.facebook.com/AlazharCis">‏كلية الدراسات المتوسطة - جامعة الأزهر‏</a>
                     </blockquote>
                 </div>
+            </div>
 
             </div>
             <div class="showcase-card">
@@ -402,8 +404,8 @@ try {
                     <img src="assets/images/youtube.svg" alt="">
                     <img src="assets/images/x.svg" alt="">
                 </div>
-                <img src="assets/images/y4EmsywidOA5Qka0C9C3fhH5Ew.png" alt=""
-                    style="width: 210px; height: 80px; object-fit: cover;">
+                    <a href="https://play.google.com/store/apps/details?id=com.azharcis.cis&pcampaignid=web_share">                <img src="assets/images/y4EmsywidOA5Qka0C9C3fhH5Ew.png" alt=""
+                    style="width: 210px; height: 80px; object-fit: cover;"></a>
             </div>
 
             <div class="footer-links">

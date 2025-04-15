@@ -464,7 +464,6 @@ h3 {
 }
 
 .last-three-container {
-    align-items: center;
     display: flex;
     flex: 1 0 0px;
     flex-direction: column;
@@ -990,6 +989,14 @@ footer :first-child {
 
     #main-pager {
         color: var(--white) !important;
+    }
+
+    #facebook {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
     }
 }
 

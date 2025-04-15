@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // Post saved successfully (as before)
             // $post_message = '<p style="color:green;">تم نشر المقالة بنجاح!</p>'; // Remove or comment this out
             $_SESSION['post_message'] = '<p style="color:green;">تم نشر المقالة بنجاح!</p>'; // Store message in session
-            header("Location: create_post.php"); // Redirect back to the create post page
+            header("Location: manage_posts.php"); // Redirect back to the create post page
             exit(); // Ensure no further code is executed after the redirect
 
             // Optionally, clear the form fields after successful submission (commented out)
@@ -94,7 +94,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <main class="container">
         <article>
             <header>
-                <h1>إنشاء مقالة جديدة</h1>
+                <h1>إنشاء خبر جديدة</h1>
                 <div>
                     <a href="dashboard.php" role="button" >لوحة التحكم</a>
                     <a href="logout.php" role="button" >تسجيل الخروج</a>
@@ -105,14 +105,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <?php endif; ?>
             <div>
                 <form method="post" action="" enctype="multipart/form-data">
-                    <label for="post_title">عنوان المقالة</label>
+                    <label for="post_title">عنوان الخبر</label>
                     <input type="text" id="post_title" name="post_title" required>
                     <label for="featured_image">صورة مميزة</label>
                     <input type="file" id="featured_image" name="featured_image" accept="image/*">
-                    <label for="post_content">محتوى المقالة</label>
+                    <label for="post_content">محتوى الخبر</label>
                     <textarea id="post_content" name="post_content" rows="10"></textarea>
 
-                    <button type="submit">نشر المقالة</button>
+                    <button type="submit">نشر الخبر</button>
                 </form>
             </div>
 

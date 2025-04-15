@@ -37,12 +37,13 @@ unset($_SESSION['advert_message']);
 <body>
     <main class="container">
         <nav style="display: flex; justify-content: space-between; align-items: center;">
-            <a href="dashboard.php" class="secondary">العودة إلى لوحة التحكم</a>
+            <a href="dashboard.php" role="button">العودة إلى لوحة التحكم</a>
             <div>
                 <a href="create_advert.php" role="button">إضافة إعلان جديد</a>
                 <a href="logout.php" role="button">تسجيل الخروج</a>
             </div>
         </nav>
+        <br>
         <article>
             <header>
                 <h1>إدارة إعلانات الكلية</h1>
