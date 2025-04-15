@@ -28,6 +28,7 @@ try {
     <link rel="stylesheet" href="assets/css/landing_page.css">
     <link rel="stylesheet" href="assets/css/typography.css">
     <title>كلية الدراسات المتوسطة - جامعة الأزهر</title>
+    <link rel="icon" href="assets/images/logocis.png" type="image/x-icon">
 </head>
 
 <body>
@@ -51,137 +52,149 @@ try {
                 </div>  
             </div>
             <div class="burger-menu ">
-                                <div>
-                    <details class="dropdown">
-                        <summary> حول الكلية</summary>
-                        <ul>
-                            <li><a href="#">عن الكلية</a></li>
-                            <li><a href="#">عميد الكلية</a></li>
-                            <li><a href="#">رئيس مجلس الأمناء</a></li>
-                            <li><a href="#">أعضاء مجلس الأمناء</a></li>
-                            <li><a href="#">مجلس الكلية</a></li>
-
-                        </ul>
-                    </details>
-                    <details class="dropdown">
-                        <summary> الأقسام و التخصصات</summary>
-                        <ul>
-                            <li><a href="#">المهن الصحية</a></li>
-                            <li><a href="#">العلوم الإدارية</a></li>
-                            <li><a href="#">الهندسة وتكنولوجيا المعلومات</a></li>
-                            <li><a href="#">الإعلام</a></li>
-                        </ul>
-                    </details>
-                    <details class="dropdown">
-                        <summary> دوائر الكلية</summary>
-                        <ul>
-                            <li><a href="#">الشؤون الأكاديمية</a></li>
-                            <li><a href="#">الشؤون الإدارية و المالية</a></li>
-                            <li><a href="#">القبول والتسجيل</a></li>
-                            <li><a href="#">شؤون الطلبة</a></li>
-                            <li><a href="#">الشؤون المالية</a></li>
-                            <li><a href="#">تكنولوجيا المعلومات</a></li>
-                        </ul>
-                    </details>
-                    <details class="dropdown">
-                        <summary> الإرشادات</summary>
-                        <ul>
-                            <li><a href="#">النظام الأكاديمي</a></li>
-                            <li><a href="#">المنح والقروض</a></li>
-                            <li><a href="#">مصطلحات وتعريفات</a></li>
-                            <li><a href="#">الضبط الأكاديمي</a></li>
-                        </ul>
-                    </details>
-                    <details class="dropdown">
-                        <summary> الخدمات الإلكترونية</summary>
-                        <ul>
-                            <li><a href="#">الطلبة الجدد</a></li>
-                            <li><a href="#">نظام الوظائف الشاغرة</a></li>
-                            <li><a href="#">نتائج الثانوية العامة</a></li>
-                            <li><a href="#">التعليم الإلكتروني</a></li>
-                            <li><a href="#">نظام متابعة الخريجين</a></li>
-                            <li><a href="#">إحتفالات التخرج</a></li>
-                            <li><a href="#">دليل الهواتف الذكية</a></li>
-                            <li><a href="#">البريد الإلكتروني</a></li>
-                        </ul>
-                    </details>
-                    <details class="dropdown">
-                        <summary> البوابات</summary>
-                        <ul>
-                            <li><a href="#">بوابة المحاضر</a></li>
-                            <li><a href="#">بوابة الطالب</a></li>
-                            <li><a href="#">بوابة الموظف</a></li>
-                            <li><a href="#">التدريب الميداني</a></li>
-                        </ul>
-                    </details>
-                    <p>إتصل بنا</p>
-                </div>
-            </div>
-            <div class="nav-bottom-part">
                 <div>
                     <details class="dropdown">
                         <summary> حول الكلية</summary>
                         <ul>
-                            <li><a href="#">عن الكلية</a></li>
-                            <li><a href="#">عميد الكلية</a></li>
-                            <li><a href="#">رئيس مجلس الأمناء</a></li>
-                            <li><a href="#">أعضاء مجلس الأمناء</a></li>
-                            <li><a href="#">مجلس الكلية</a></li>
+                            <li><a href="html/about/about-collage.html">عن الكلية</a></li>
+                            <li><a href="html/about/collage-dean.html">عميد الكلية</a></li>
+                            <li><a href="html/about/chairman-of-the-board-of-trustees.html">رئيس مجلس الأمناء</a></li>
+                            <li><a href="html/about/board-of-trustees-members.html">أعضاء مجلس الأمناء</a></li>
+                            <li><a href="html/about/college-council.html">مجلس الكلية</a></li>
 
                         </ul>
                     </details>
                     <details class="dropdown">
                         <summary> الأقسام و التخصصات</summary>
                         <ul>
-                            <li><a href="#">المهن الصحية</a></li>
-                            <li><a href="#">العلوم الإدارية</a></li>
-                            <li><a href="#">الهندسة وتكنولوجيا المعلومات</a></li>
-                            <li><a href="#">الإعلام</a></li>
+                            <li><a href="html/departments-and-specializations/health-professions.html">المهن الصحية</a></li>
+                            <li><a href="html/departments-and-specializations/management-professions.html">العلوم الإدارية</a></li>
+                            <li><a href="html/departments-and-specializations/computer-professions.html">الهندسة وتكنولوجيا المعلومات</a></li>
+                            <li><a href="html/departments-and-specializations/media-professions.html">الإعلام</a></li>
                         </ul>
                     </details>
                     <details class="dropdown">
                         <summary> دوائر الكلية</summary>
                         <ul>
-                            <li><a href="#">الشؤون الأكاديمية</a></li>
-                            <li><a href="#">الشؤون الإدارية و المالية</a></li>
-                            <li><a href="#">القبول والتسجيل</a></li>
-                            <li><a href="#">شؤون الطلبة</a></li>
-                            <li><a href="#">الشؤون المالية</a></li>
-                            <li><a href="#">تكنولوجيا المعلومات</a></li>
+                            <li><a href="html/college-departments/academic-affairs.html">الشؤون الأكاديمية</a></li>
+                            <li><a href="html/college-departments/administrative-and-financial-affairs.html">الشؤون الإدارية و المالية</a></li>
+                            <li><a href="html/college-departments/admission-and-registration.html">القبول والتسجيل</a></li>
+                            <li><a href="html/college-departments/student-affairs.html">شؤون الطلبة</a></li>
+                            <li><a href="html/college-departments/financial-affairs.html">الشؤون المالية</a></li>
+                            <li><a href="html/college-departments/technology-affairs.html">تكنولوجيا المعلومات</a></li>
                         </ul>
                     </details>
                     <details class="dropdown">
                         <summary> الإرشادات</summary>
                         <ul>
-                            <li><a href="#">النظام الأكاديمي</a></li>
-                            <li><a href="#">المنح والقروض</a></li>
-                            <li><a href="#">مصطلحات وتعريفات</a></li>
-                            <li><a href="#">الضبط الأكاديمي</a></li>
+                            <li><a href="html/guidances/academic-system.html">النظام الأكاديمي</a></li>
+                            <li><a href="html/guidances/grants-and-loans.html">المنح والقروض</a></li>
+                            <li><a href="html/guidances/terms-and-definitions.html">مصطلحات وتعريفات</a></li>
+                            <li><a href="html/guidances/academic-discipline.html">الضبط الأكاديمي</a></li>
                         </ul>
                     </details>
                     <details class="dropdown">
                         <summary> الخدمات الإلكترونية</summary>
                         <ul>
-                            <li><a href="#">الطلبة الجدد</a></li>
                             <li><a href="#">نظام الوظائف الشاغرة</a></li>
-                            <li><a href="#">نتائج الثانوية العامة</a></li>
-                            <li><a href="#">التعليم الإلكتروني</a></li>
-                            <li><a href="#">نظام متابعة الخريجين</a></li>
-                            <li><a href="#">إحتفالات التخرج</a></li>
-                            <li><a href="#">دليل الهواتف الذكية</a></li>
-                            <li><a href="#">البريد الإلكتروني</a></li>
+                            <li><a href="https://moodle.cis.edu.ps/">التعليم الإلكتروني</a></li>
+                            <li><a href="https://www.flickr.com/photos/azharcis/">إحتفالات التخرج</a></li>
+                            <li><a href="mailto:Cis@Alazhar.Edu.Ps?subject=Inquiry&body=Hello,">البريد الإلكتروني</a></li>
                         </ul>
                     </details>
                     <details class="dropdown">
                         <summary> البوابات</summary>
                         <ul>
-                            <li><a href="#">بوابة المحاضر</a></li>
-                            <li><a href="#">بوابة الطالب</a></li>
-                            <li><a href="#">بوابة الموظف</a></li>
-                            <li><a href="#">التدريب الميداني</a></li>
+                            <li><a href="https://gate.cis.edu.ps/emps/">بوابة المحاضر</a></li>
+                            <li><a href="https://gate.cis.edu.ps/student/Slogin.aspx">بوابة الطالب</a></li>
+                            <li><a href="https://gate.cis.edu.ps/demps/Elogin.aspx">بوابة الموظف</a></li>
+                            <li><a href="https://www.cis.edu.ps/training">التدريب الميداني</a></li>
                         </ul>
                     </details>
-                    <p>إتصل بنا</p>
+                    <a id="openDialog">إتصل بنا</a>
+
+                    <dialog id="contactDialog">
+                        <button class="close-btn" id="closeDialog">✖</button>
+                        <div class="dialog-header">معلومات الاتصال</div>
+                        <div class="contact-info">
+                            <p><strong>هاتف:</strong> 2641895 9708</p>
+                            <p><strong>البريد الإلكتروني:</strong> Cis@Alazhar.Edu.Ps</p>
+                            <p><strong>العنوان:</strong> غزة شارع جمال عبد الناصر</p>
+                        </div>
+                    </dialog>
+                </div>
+            </div>
+            <div class="nav-bottom-part">
+                                <div>
+                    <details class="dropdown">
+                        <summary> حول الكلية</summary>
+                        <ul>
+                            <li><a href="html/about/about-collage.html">عن الكلية</a></li>
+                            <li><a href="html/about/collage-dean.html">عميد الكلية</a></li>
+                            <li><a href="html/about/chairman-of-the-board-of-trustees.html">رئيس مجلس الأمناء</a></li>
+                            <li><a href="html/about/board-of-trustees-members.html">أعضاء مجلس الأمناء</a></li>
+                            <li><a href="html/about/college-council.html">مجلس الكلية</a></li>
+
+                        </ul>
+                    </details>
+                    <details class="dropdown">
+                        <summary> الأقسام و التخصصات</summary>
+                        <ul>
+                            <li><a href="html/departments-and-specializations/health-professions.html">المهن الصحية</a></li>
+                            <li><a href="html/departments-and-specializations/management-professions.html">العلوم الإدارية</a></li>
+                            <li><a href="html/departments-and-specializations/computer-professions.html">الهندسة وتكنولوجيا المعلومات</a></li>
+                            <li><a href="html/departments-and-specializations/media-professions.html">الإعلام</a></li>
+                        </ul>
+                    </details>
+                    <details class="dropdown">
+                        <summary> دوائر الكلية</summary>
+                        <ul>
+                            <li><a href="html/college-departments/academic-affairs.html">الشؤون الأكاديمية</a></li>
+                            <li><a href="html/college-departments/administrative-and-financial-affairs.html">الشؤون الإدارية و المالية</a></li>
+                            <li><a href="html/college-departments/admission-and-registration.html">القبول والتسجيل</a></li>
+                            <li><a href="html/college-departments/student-affairs.html">شؤون الطلبة</a></li>
+                            <li><a href="html/college-departments/financial-affairs.html">الشؤون المالية</a></li>
+                            <li><a href="html/college-departments/technology-affairs.html">تكنولوجيا المعلومات</a></li>
+                        </ul>
+                    </details>
+                    <details class="dropdown">
+                        <summary> الإرشادات</summary>
+                        <ul>
+                            <li><a href="html/guidances/academic-system.html">النظام الأكاديمي</a></li>
+                            <li><a href="html/guidances/grants-and-loans.html">المنح والقروض</a></li>
+                            <li><a href="html/guidances/terms-and-definitions.html">مصطلحات وتعريفات</a></li>
+                            <li><a href="html/guidances/academic-discipline.html">الضبط الأكاديمي</a></li>
+                        </ul>
+                    </details>
+                    <details class="dropdown">
+                        <summary> الخدمات الإلكترونية</summary>
+                        <ul>
+                            <li><a href="#">نظام الوظائف الشاغرة</a></li>
+                            <li><a href="https://moodle.cis.edu.ps/">التعليم الإلكتروني</a></li>
+                            <li><a href="https://www.flickr.com/photos/azharcis/">إحتفالات التخرج</a></li>
+                            <li><a href="mailto:Cis@Alazhar.Edu.Ps?subject=Inquiry&body=Hello,">البريد الإلكتروني</a></li>
+                        </ul>
+                    </details>
+                    <details class="dropdown">
+                        <summary> البوابات</summary>
+                        <ul>
+                            <li><a href="https://gate.cis.edu.ps/emps/">بوابة المحاضر</a></li>
+                            <li><a href="https://gate.cis.edu.ps/student/Slogin.aspx">بوابة الطالب</a></li>
+                            <li><a href="https://gate.cis.edu.ps/demps/Elogin.aspx">بوابة الموظف</a></li>
+                            <li><a href="https://www.cis.edu.ps/training">التدريب الميداني</a></li>
+                        </ul>
+                    </details>
+                    <a id="openDialog">إتصل بنا</a>
+
+                    <dialog id="contactDialog">
+                        <button class="close-btn" id="closeDialog">✖</button>
+                        <div class="dialog-header">معلومات الاتصال</div>
+                        <div class="contact-info">
+                            <p><strong>هاتف:</strong> 2641895 9708</p>
+                            <p><strong>البريد الإلكتروني:</strong> Cis@Alazhar.Edu.Ps</p>
+                            <p><strong>العنوان:</strong> غزة شارع جمال عبد الناصر</p>
+                        </div>
+                    </dialog>
                 </div>
             </div>
         </nav>
@@ -195,19 +208,19 @@ try {
                 <p>العلاقات الخارجية</p>
             </div>
             <div class="grid-button">
-                <p>القبول والتسجيل</p>
+                <p><a href="html/college-departments/admission-and-registration.html">القبول والتسجيل</a></p>
             </div>
             <div class="grid-button">
-                <p>الحياة الجامعية</p>
+                <p><a href="html/guidances/student-life.html">الحياة الجامعية</a></p>
             </div>
             <div class="grid-button">
-                <p>البريد الإلكتروني</p>
+                <p><a href="href="mailto:Cis@Alazhar.Edu.Ps?subject=Inquiry&body=Hello,"">البريد الإلكتروني</a></p>
             </div>
             <div class="grid-button">
                 <p>التقويم الأكاديمي</p>
             </div>
             <div class="grid-button-blue">
-                <p>التعليم الإلكتروني</p>
+                <p><a href="https://moodle.cis.edu.ps/">التعليم الإلكتروني</a></p>
             </div>
         </div>
     </header>
@@ -400,9 +413,9 @@ try {
                         روابط سريعة
                     </p>
                     <div>
-                        <p>الخدمات الاكترونية</p>
+                        <p><a href="https://moodle.cis.edu.ps/">التعليم الإلكتروني</a></p>
 
-                        <p>جامعة الأزهر
+                        <p><a href="https://www.alazhar.edu.ps/arabic/index.asp">جامعة الأزهر</a>
                         </p>
                         <p>صندوق إقراض الطلبة
                         </p>
@@ -416,13 +429,13 @@ try {
                         الإرشادات
                     </p>
                     <div>
-                        <p>النظام الأكاديمي
+                        <p><a href="html/guidances/academic-system.html">النظام الأكاديمي</a>
                         </p>
-                        <p>مصطلحات وتعريفات
+                        <p><a href="html/guidances/terms-and-definitions.html">مصطلحات وتعريفات</a>
                         </p>
-                        <p>الضبط الأكاديمي
+                        <p><a href="html/guidances/academic-discipline.html">الضبط الأكاديمي</a>
                         </p>
-                        <p>المنح والقورض
+                        <p><a href="html/guidances/grants-and-loans.html">المنح والقورض</a>
                         </p>
                     </div>
                 </div>
@@ -444,7 +457,8 @@ try {
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1700.6707854490385!2d34.43668459493744!3d31.514777319476828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14fd7f40c6369635%3A0x79148138d87401d4!2sIntermediate%20College%20of%20Studies%20-%20Al-Azhar!5e0!3m2!1sen!2s!4v1743591695655!5m2!1sen!2s"
                     width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade "></iframe>
+                    referrerpolicy="no-referrer-when-downgrade ">
+                </iframe>
             </div>
         </div>
         <img src="assets/images/nuMfDkeqh8X9tg5eDnYclmy6psY.svg" alt="">

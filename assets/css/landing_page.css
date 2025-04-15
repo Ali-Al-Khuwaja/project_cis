@@ -355,6 +355,12 @@ h3 {
     border-bottom-width: 0px;
     border-left-width: 0px;
     border-right-width: 1px;
+
+}
+
+.grid-button a {
+    color: var(--white) !important;
+    text-decoration: none;
 }
 
 .grid-button-blue {
@@ -379,8 +385,9 @@ h3 {
     border-right-width: 1px;
 }
 
-.grid-button-blue>p {
+.grid-button-blue a {
     color: var(--white);
+    text-decoration: var(--white);
 }
 
 .stats_section {
@@ -979,6 +986,10 @@ footer :first-child {
     .sub-main-img {
         width: 100% !important;
         border-radius: 5px;
+    }
+
+    #main-pager {
+        color: var(--white) !important;
     }
 }
 
